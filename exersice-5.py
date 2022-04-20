@@ -18,8 +18,8 @@ def fibb(n):
     if n <= 2:
         return n
     else:
-        return (fibb (n-1) + recur_fibo(n-2))
+        return (fibb (n-1) + fibb(n-2))
 
 
     for n in range(0, 50):
-        print(f'term: {n} / number: {fib(n)}')
+        print(f'term: {n} / number: {fibb(n)}')
