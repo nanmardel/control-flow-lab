@@ -12,20 +12,14 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+ 
 
-term = 0
-n1 = 0
-n2 = 1
-
-while term < 50:
-    if term < 2:
-        print(f'term: {term} / number: {term}')
+def fibb(n):
+    if n <= 2:
+        return n
     else:
-        num = x + y
-        print(f'term: {term} / number: {num}') 
-        x = y
-        y = num
-    term += 1   
+        return (fibb (n-1) + recur_fibo(n-2))
 
 
-
+    for n in range(0, 50):
+        print(f'term: {n} / number: {fib(n)}')
