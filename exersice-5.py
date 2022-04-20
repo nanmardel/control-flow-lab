@@ -14,12 +14,12 @@
 # Hint: The next number is found by adding the two numbers before it
  
 
-def fibb(n):
-    if n <= 2:
+
+def fibo(n):
+    if n <= 1:
         return n
     else:
-        return (fibb (n-1) + fibb(n-2))
+        return(fibo(n-1) + fibo(n-2))
 
-
-    for n in range(0, 50):
-        print(f'term: {n} / number: {fibb(n)}')
+for n in range(0,50):
+    print(f'term {n} / number: {fibo(n)}')
