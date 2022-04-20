@@ -13,3 +13,16 @@
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
+print('Enter the lengths of three sides of a triangle one at a time')
+
+a = input()
+b = input()
+c = input()
+
+if a == b and b == c:
+    triangle = 'equalateral'
+elif a != b and b !=c:
+    triangle = 'scalene' 
+else:
+    triangle = 'isosceles'      
+print(f'A triangle with sides of {a}, {b} & {c} is a {triangle} triangle')
